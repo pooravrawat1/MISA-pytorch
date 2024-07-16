@@ -44,8 +44,7 @@ beta1=(0.7)
 beta2=(0.65)
 
 experimenter="$USER"
-configuration="/data/
-users3/prawat2/MISA-pytorch/configs/sim-siva.yaml"
+configuration="/data/users3/prawat2/MISA-pytorch/configs/sim-siva.yaml"
 
 data_file="sim-siva_dataset"$n_dataset"_source"$n_source"_sample"$n_sample"_seed"$SEED".mat"
 declare -i num_experiments=${#lrs[@]}
