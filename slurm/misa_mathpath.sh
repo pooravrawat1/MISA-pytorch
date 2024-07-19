@@ -7,7 +7,6 @@
 #
 #SBATCH -p qTRDGPUH
 #SBATCH --gres=gpu:V100:1
-#SBATCH --array=0-2
 #SBATCH --account=trends53c17
 #SBATCH --job-name=MISAtorch
 #SBATCH --verbose
