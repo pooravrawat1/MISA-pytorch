@@ -5,16 +5,17 @@
 #SBATCH --mail-user=prawat2@student.gsu.edu
 #SBATCH --chdir=/data/users3/prawat2/MISA-pytorch
 #
-#SBATCH -p qTRDGPU
-#SBATCH --gres=gpu:A40:1
+#SBATCH -p qTRDGPUH
+#SBATCH --gres=gpu:V100:1
+#SBATCH --array=0-2
 #SBATCH --account=trends53c17
 #SBATCH --job-name=MISAtorch
 #SBATCH --verbose
 #SBATCH --time=7200
 #
 #SBATCH --nodes=1
-#SBATCH --mem=128g
-#SBATCH --cpus-per-task=32
+#SBATCH --mem=90g
+#SBATCH --cpus-per-task=10
 
 
 sleep 5s
